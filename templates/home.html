@@ -22,7 +22,7 @@
 
     #banner{
       width: 100%;
-      height:260px;
+      height:400px;
     }
 
    
@@ -30,15 +30,20 @@
   </head>
   
   <body>
+          {% include 'nav.html' %}
+      <img  id="banner" src="https://college-career-website--koushiksingh3.repl.co/static/banner.jpeg">
+
     <div class="container">
       <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h3>
-      <img class="img-fluid" id="banner" src="https://college-career-website--koushiksingh3.repl.co/static/banner.jpeg">
-    <div>
-      
-    <div>
-      <h3  class="text-center mt-2 mb-4">About {{company_name}} Careers</h3> 
-      <p class="lead">CSSSR is an international web development company. Since our founding in 2012, we’ve been working remotely. Our core values are clean code, reliable alliances with our customers, and no corporate BS. We do full-cycle web development with special emphasis on the front-end parts. Working with JS using React, Angular, and Vue. We like to best ourselves and do it from time to time.</p>
-    </div>
+      <div class="row">
+      <div class="col-6">
+      <p class="lead mt-8">CSSSR is an international web development company. Since our founding in 2012, we’ve been working remotely. Our core values are clean code, reliable alliances with our customers, and no corporate BS. We do full-cycle web development with special emphasis on the front-end parts. Working with JS using React, Angular, and Vue. We like to best ourselves and do it from time to time.</p> <p class="lead mt-8">CSSSR is an international web development company. Since our founding in 2012, we’ve been working remotely. Our core values are clean code, reliable alliances with our customers, and no corporate BS. We do full-cycle web development with special emphasis on the front-end parts. Working with JS using React, Angular, and Vue. We like to best ourselves and do it from time to time.</p>
+      </div >
+      <div class="col-6">
+      <img  id="banner" src="https://college-career-website--koushiksingh3.repl.co/static/bannerImg.jpg">
+        
+      </div>
+      </div>
        <h2  class="text-center mt-2 mb-4">Lastest Job Openings</h3>
 
       
@@ -54,11 +59,13 @@
      
       {% endfor %}
     </div>
-      
-      
+
     <div class="text-center">
       <button class="btn btn-primary btn-lg text-center">Contact Us</button>
-      <p class="mt-2">Copyright @2023</p>
+            {% include 'footer.html' %}
+
     </div>
+      
+    
   </body>
 </html>
