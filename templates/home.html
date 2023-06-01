@@ -31,16 +31,16 @@
   
   <body>
           {% include 'nav.html' %}
-      <img  id="banner" src="https://college-career-website--koushiksingh3.repl.co/static/banner.jpeg">
+      <img class="img-fluid" id="banner" src="https://college-career-website--koushiksingh3.repl.co/static/banner.jpeg">
 
     <div class="container">
       <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h3>
       <div class="row">
-      <div class="col-6">
-      <p class="lead mt-8">CSSSR is an international web development company. Since our founding in 2012, we’ve been working remotely. Our core values are clean code, reliable alliances with our customers, and no corporate BS. We do full-cycle web development with special emphasis on the front-end parts. Working with JS using React, Angular, and Vue. We like to best ourselves and do it from time to time.</p> <p class="lead mt-8">CSSSR is an international web development company. Since our founding in 2012, we’ve been working remotely. Our core values are clean code, reliable alliances with our customers, and no corporate BS. We do full-cycle web development with special emphasis on the front-end parts. Working with JS using React, Angular, and Vue. We like to best ourselves and do it from time to time.</p>
+      <div class="col-md-6">
+      <p class="lead mt-8">CSSSR is an international web development company. Since our founding in 2012, we’ve been working remotely. Our core values are clean code, reliable alliances with our customers, and no corporate BS. We do full-cycle web development with special emphasis on the front-end parts. Working with JS using React, Angular, and Vue. We like to best ourselves and do it from time to time.</p> 
       </div >
-      <div class="col-6">
-      <img  id="banner" src="https://college-career-website--koushiksingh3.repl.co/static/bannerImg.jpg">
+      <div class="d-none d-md-block col-md-6">
+      <img class="img-fluid" id="banner" src="https://college-career-website--koushiksingh3.repl.co/static/bannerImg.jpg" style="height:320px;border-radius:4px;margin:2% 6%">
         
       </div>
       </div>
@@ -61,7 +61,7 @@
     </div>
 
     <div class="text-center">
-      <button class="btn btn-primary btn-lg text-center">Contact Us</button>
+      <a href="mailto:thekoushik.singh@gmail.com?subject=Application for {{jobs['title']}}" class="btn btn-primary btn-lg text-center">Contact Us</a>
             {% include 'footer.html' %}
 
     </div>
