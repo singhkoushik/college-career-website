@@ -33,6 +33,18 @@ print("hi")
 @app.route("/api/jobs")
 def list_jobs():
   return jsonify(JOBS)
+
+@app.route("/features")
+def features():
+  return render_template('features.html')
+
+@app.route("/faq")
+def faq():
+  return render_template('faq.html')
+
+@app.route("/about")
+def about():
+  return render_template('about.html')
   
 if __name__ == "__main__":
   print("I'm inside if now")
